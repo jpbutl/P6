@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		485170EA1EA88B07008E15CD /* TblViewControllerTrips.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485170E91EA88B07008E15CD /* TblViewControllerTrips.swift */; };
+		485170EC1EA88BC2008E15CD /* TblViewControllerTripInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485170EB1EA88BC2008E15CD /* TblViewControllerTripInfo.swift */; };
+		485170EE1EA88C88008E15CD /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485170ED1EA88C88008E15CD /* Trip.swift */; };
 		488741E61EA85C6C0032C79F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488741E51EA85C6C0032C79F /* AppDelegate.swift */; };
 		488741E81EA85C6C0032C79F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488741E71EA85C6C0032C79F /* ViewController.swift */; };
 		488741EB1EA85C6C0032C79F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 488741E91EA85C6C0032C79F /* Main.storyboard */; };
@@ -34,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		485170E91EA88B07008E15CD /* TblViewControllerTrips.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TblViewControllerTrips.swift; sourceTree = "<group>"; };
+		485170EB1EA88BC2008E15CD /* TblViewControllerTripInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TblViewControllerTripInfo.swift; sourceTree = "<group>"; };
+		485170ED1EA88C88008E15CD /* Trip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
 		488741E21EA85C6C0032C79F /* Prac6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Prac6.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		488741E51EA85C6C0032C79F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		488741E71EA85C6C0032C79F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +106,9 @@
 				488741E51EA85C6C0032C79F /* AppDelegate.swift */,
 				488741E71EA85C6C0032C79F /* ViewController.swift */,
 				488741E91EA85C6C0032C79F /* Main.storyboard */,
+				485170E91EA88B07008E15CD /* TblViewControllerTrips.swift */,
+				485170EB1EA88BC2008E15CD /* TblViewControllerTripInfo.swift */,
+				485170ED1EA88C88008E15CD /* Trip.swift */,
 				488741EC1EA85C6C0032C79F /* Assets.xcassets */,
 				488741EE1EA85C6C0032C79F /* LaunchScreen.storyboard */,
 				488741F11EA85C6C0032C79F /* Info.plist */,
@@ -259,7 +268,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				485170EE1EA88C88008E15CD /* Trip.swift in Sources */,
+				485170EA1EA88B07008E15CD /* TblViewControllerTrips.swift in Sources */,
 				488741E81EA85C6C0032C79F /* ViewController.swift in Sources */,
+				485170EC1EA88BC2008E15CD /* TblViewControllerTripInfo.swift in Sources */,
 				488741E61EA85C6C0032C79F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -505,6 +517,7 @@
 				4887420C1EA85C6D0032C79F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4887420D1EA85C6D0032C79F /* Build configuration list for PBXNativeTarget "Prac6Tests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +526,7 @@
 				4887420F1EA85C6D0032C79F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		488742101EA85C6D0032C79F /* Build configuration list for PBXNativeTarget "Prac6UITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +535,7 @@
 				488742121EA85C6D0032C79F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
