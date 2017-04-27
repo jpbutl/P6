@@ -41,16 +41,3 @@ class Utilities
         //refer to file as .jpg/.jpeg's
     }
 }
-
-//19. do it here?
-
-//override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//    performSegue(withIdentifier: "segueTripDetails", sender: Utilities.trips[indexPath.row])
-//}
-//
-//override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//    //
-//    if segue.identifier == "segueTripDetails" {
-//        (segue.destination as! TblViewControllerTripInfo).trip = (sender as! Trip)
-//    }
-//}

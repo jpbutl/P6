@@ -25,6 +25,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="mtQ-zv-M56" kind="show" identifier="segueTripDetails" trigger="accessoryAction" id="GiB-vx-q5j"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -61,12 +64,16 @@
                                                     <state key="normal" title="Save"/>
                                                     <connections>
                                                         <action selector="saveTripInfo:" destination="mtQ-zv-M56" eventType="touchUpInside" id="oas-vO-TJy"/>
+                                                        <segue destination="JVr-dP-439" kind="unwind" unwindAction="unWindSegueWithSegue:" id="Vmk-rj-mdM"/>
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eZH-RG-2Bb">
                                                     <rect key="frame" x="230" y="8" width="61" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <state key="normal" title="Cancel"/>
+                                                    <connections>
+                                                        <segue destination="JVr-dP-439" kind="unwind" unwindAction="unWindSegueWithSegue:" id="13D-0e-Pom"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -158,6 +165,7 @@
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o5i-W6-DCh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="JVr-dP-439" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="816.79999999999995" y="65.217391304347828"/>
         </scene>

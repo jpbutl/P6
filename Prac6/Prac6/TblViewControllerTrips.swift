@@ -36,4 +36,36 @@ class TblViewControllerTrips : UITableViewController {
         cell.imageView?.image = Utilities.trips[indexPath.row].destinationImage
         return cell
     }
+    
+    
+    
+    //19. do it here?
+    
+    //Trigger the segue for the selected cell, and send the trip object to the details view
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "segueTripDetails", sender: Utilities.trips[indexPath.row])
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        //I created a segue from the cell to the Trip Info and changed the identifier to segueTripDetails
+        if segue.identifier == "segueTripDetails" {
+            (segue.destination as! TblViewControllerTripInfo).trip = (sender as! Trip)
+        }
+    }
+    
+    //called in the unwind segue - exit Trip Info
+    @IBAction func unWindSegue(segue : UIStoryboardSegue)
+    {
+        self.tableView.reloadData()
+    }
+    
+    //editing table view - tape left on the table view to see
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath:
+        IndexPath) {
+        if editingStyle == .delete {
+            Utilities.trips.remove(at: indexPath.row)
+            self.tableView.deleteRows(at: [indexPath], with: .fade)
+        }
+    }
+    
 }
